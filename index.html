@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    link
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/Screenshot 2024-04-25 182618.png" alt="logo">
+        </div>
+        <div class="menue" id="menuList">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <button>Sign Up</button>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars" id="icone"></i>
+        </div>
+   
+    </div>
+        <script> 
+                        const hamburger = document.getElementById('hamburger');
+            const menuList = document.getElementById('menuList');
+
+            hamburger.addEventListener('click', () => {
+                
+                menuList.classList.toggle('active');
+            });
+                        document.addEventListener('click', (event) => {
+                if (!menuList.contains(event.target) && !hamburger.contains(event.target)) {
+                
+                    menuList.classList.remove('active');
+                }
+            });
+        </script>  
+
+    <div class="hero">
+        <div class="herol">
+            <h1>Live Action From 
+                Your <span class="browcol">Browser</span></h1>
+            <p>Enjoy Latest Cricketing Actions infront of 
+                your screen for <span class="free">free</span></p>
+            <button>Sign Up Now</button>    
+            
+        </div>
+        <div class="heror">
+            <img src="images/hero.png" alt="heroimg">
+        </div>
+    </div>
+
+    
+    <div class="feedsec">
+        <h2>Catch The Latest <span class="h2act">Actions</span></h2>
+        <div class="updatefeed">
+            <div class="banner">
+                <img src="images/Screenshot 2024-09-25 171331.png" alt="bannerimg">
+            </div>
+            <div class="textboard">
+                <h1>BD vs IND</h1>
+                <p>SADFJBSADFJBASDLJKFAFWJ
+                    ASLKJDFHNASLJKDFASKDFA</p>
+                <button>Watch Now</button>    
+            </div>
+        </div>
+    </div>
+
+    <div class="channelsec">
+        <div class="textl">
+            <h2>You Get The Best <span class="h2chan">Channels</span></h2>
+            <p>We offer a wide range of well known 
+                cricket channels for Free-of-Cost</p>
+            <button>Watch Now</button>
+        </div>
+        <div class="minbox">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/8bc9355e94.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  
+</body>
+</html>

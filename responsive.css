@@ -1,0 +1,218 @@
+@media all and (max-width:1024px){
+    .header{
+        width:768px;
+    }
+    .menue{
+        width: 70%;
+    }
+    
+    
+    
+    
+    
+    .hero{
+        width: 768px;
+    }
+    .herol{
+        width: 50%;
+    }
+    .heror {
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width:50%;
+    }
+    .heror img{
+        width:100%;
+        height: 80%;
+    }
+
+
+
+
+    .feedsec{
+        width: 768px;
+        height: 500px;
+    }
+    .updatefeed{
+        width: 98%;
+        height: 58%;
+        gap: 30px;
+    }
+    .banner{
+        width: 50%;
+        
+    }
+    .banner img{
+        width: 100%;
+        
+    }
+    .textboard{
+        width: 45%;
+        margin-top: 55px;
+    }
+
+
+
+
+
+.channelsec{
+    width:768px;
+    height: 750px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.minbox{
+    width: 60%;
+    height: 200px;
+}
+.box1, .box2, .box3, .box4{
+    width: 155px;
+    height:143px;
+}
+.textl{
+    text-align: center;
+}
+.textl h2{
+    margin-bottom: 25px;
+}
+.textl p{
+    width: 100%;
+    margin-bottom: 25px;
+}
+}
+
+@media all and (max-width:750px){
+    .header{
+        width: 98%;
+    }
+    .menue {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #000000;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menue.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i{
+        transform: scale(2);
+    }    
+    #menuList{
+        transition: all 0.5s;
+    }
+
+
+
+
+    .hero{
+        width:98%;
+        height:580px;
+    }
+    .heror{
+        display: none;
+    }
+    .herol{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .herol h1{
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+    .herol p{
+        width:70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .feedsec{
+        width: 98%;
+    }
+    .updatefeed{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+
+    }
+    .banner{
+        width: 90%;
+        height: 90%;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    .banner img{
+        margin-top: 30px;
+        transform: scale(1.07);
+        border-radius: 43px;
+    }
+    .textboard{
+        width:100%;
+        height: 250px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        padding-top: 0px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .textboard h1{
+        font-size: 50px;
+        
+    }
+    .textboard p{
+        font-size: 18px;
+        display: none;
+    }
+    .textboard h1{
+        margin-bottom: 10px;
+        text-shadow:0px 0px 5px #00ffcc;
+    }
+
+
+
+    
+    .channelsec{
+        width:98%;
+    }
+    .minbox{
+        width: 90%;
+    }
+    .box1, .box2, .box3, .box4{
+        width: 120px;
+        height:111px;
+    }
+    .textl{
+       width: 100%;
+    }
+    .textl h2{
+        margin-bottom: 25px;
+    }
+    .textl p{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+}
